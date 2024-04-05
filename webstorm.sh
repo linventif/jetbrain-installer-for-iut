@@ -30,7 +30,7 @@ setup() {
     echo
     cat <<-EOF > $config_file
     KEEP_TAR_GZ_FILE=$KEEP_TAR_GZ_FILE
-    EOF
+EOF
 
     echo
     echo "La configuration a été sauvegardée."
@@ -235,9 +235,7 @@ add_desktop_entry () {
     StartupNotify=true
     StartupWMClass=jetbrains-webstorm
     Categories=Development;IDE;JavaScript;
-    EOF
-    echo "$desktop_content_launch"
-    echo "Raccourci de l'application créé (vous devez peut-être redémarrer votre session pour voir le changement)"
+EOF
 }
 
 # Supprime le fichier .tar.gz
